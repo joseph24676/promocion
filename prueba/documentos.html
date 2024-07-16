@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Carga de Documentos</title>
+    <link rel="stylesheet" href="./css/documentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Carga de Documentos</h1>
+        <p>Bienvenido al sistema de carga de documentos para la solicitud o recategorización de profesores de la Universidad Laica Eloy Alfaro de Manabí (ULEAM). A continuación, puede subir los documentos necesarios para completar su solicitud. Por favor, asegúrese de que todos los archivos sean correctos y cumplan con los requisitos establecidos.</p>
+        
+        <form id="uploadForm" action="procesar_carga.php" method="post" enctype="multipart/form-data">
+            <!-- Documentación de Experiencia Profesional -->
+            <div class="form-group">
+                <label for="experienciaProfesional">Documentación de Experiencia Profesional:</label>
+                <div id="drop-zone-experiencia" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="experienciaProfesional" name="experienciaProfesional[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+
+            <!-- Participación en Eventos Académicos -->
+            <div class="form-group">
+                <label for="eventosAcademicos">Participación en Eventos Académicos:</label>
+                <div id="drop-zone-eventos" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="eventosAcademicos" name="eventosAcademicos[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+
+            <!-- Otros Documentos Relevantes -->
+            <div class="form-group">
+                <label for="otrosDocumentos">Otros Documentos Relevantes:</label>
+                <div id="drop-zone-otros" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="otrosDocumentos" name="otrosDocumentos[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+
+            <!-- Títulos Académicos -->
+            <div class="form-group">
+                <label for="titulosAcademicos">Títulos Académicos:</label>
+                <div id="drop-zone-titulos" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="titulosAcademicos" name="titulosAcademicos[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+
+            <!-- Certificados de Capacitación y Actualización -->
+            <div class="form-group">
+                <label for="certificadosCapacitacion">Certificados de Capacitación y Actualización:</label>
+                <div id="drop-zone-capacitacion" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="certificadosCapacitacion" name="certificadosCapacitacion[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+
+            <!-- Currículum Vitae -->
+            <div class="form-group">
+                <label for="cvExperienciaDocente">Currículum Vitae - Experiencia Docente:</label>
+                <div id="drop-zone-cv-docente" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="cvExperienciaDocente" name="cvExperienciaDocente[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvExperienciaProfesional">Currículum Vitae - Experiencia Profesional:</label>
+                <div id="drop-zone-cv-profesional" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="cvExperienciaProfesional" name="cvExperienciaProfesional[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvPublicaciones">Currículum Vitae - Publicaciones y Trabajos de Investigación:</label>
+                <div id="drop-zone-cv-publicaciones" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="cvPublicaciones" name="cvPublicaciones[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvCongresos">Currículum Vitae - Participación en Congresos y Seminarios:</label>
+                <div id="drop-zone-cv-congresos" class="drop-zone">
+                    <p>Arrastra y suelta tus archivos aquí o haz clic para seleccionarlos.</p>
+                    <input type="file" id="cvCongresos" name="cvCongresos[]" accept=".pdf,.doc,.docx" multiple required hidden>
+                </div>
+            </div>
+
+            <button type="button" id="cargarDocumentoBtn">Cargar Documentos</button>
+        </form>
+    </div>
+
+    <div id="mensajeExito" class="mensajeExito hidden">Documentos cargados con éxito</div>
+    <div id="mensajeError" class="mensajeError hidden">Debes de subir todos los archivos solicitados</div>
+
+    <script src="./js/documentos.js"></script>
+</body>
+</html>

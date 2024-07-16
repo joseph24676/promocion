@@ -1,0 +1,186 @@
+/* Importa una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(abstract-gradient-neon-lights.jpg);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.drop-zone {
+    width: 100%;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.drop-zone:hover {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+.drop-zone p {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+}
+
+.drop-zone--over {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 91, 187, 0.2);
+}
+
+button[type="submit"]:active {
+    background-color: #004080;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Agregar estilos para el mensaje de éxito */
+.mensajeExito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.mensajeExito.hidden {
+    opacity: 0;
+    pointer-events: none; /* Para que el usuario no pueda interactuar con el mensaje oculto */
+}
+
+/* Estilos adicionales para el botón "Cargar Documento" */
+#cargarDocumentoBtn {
+    display: block;
+    width: 50%; /* Ancho del botón */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 15px; /* Aumentar el padding para hacer el botón más grande */
+    background-color: #007bff; /* Color azul */
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cargarDocumentoBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 91, 187, 0.2);
+}
+
+#cargarDocumentoBtn:active {
+    background-color: #004080;
+}
+
+#cargarDocumentoBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para el mensaje de error */
+.mensajeError, .mensajeExito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.mensajeExito {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.mensajeError {
+    background-color: #f44336;
+    color: white;
+}
+
+.mensajeExito.hidden, .mensajeError.hidden {
+    opacity: 0;
+    pointer-events: none; /* Para que el usuario no pueda interactuar con el mensaje oculto */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Revisión y Validación de Documentos</title>
+    <link rel="stylesheet" href="./css/revision.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Revisión y Validación de Documentos</h1>
+        </header>
+        <main>
+            <div class="documents-list">
+                <h2>Documentos Pendientes de Revisión</h2>
+                <ul id="documents">
+                    <!-- Lista de documentos generada dinámicamente -->
+                </ul>
+            </div>
+            <div class="document-details">
+                <h2>Detalles del Documento</h2>
+                <div id="details">
+                    <p>Seleccione un documento para ver los detalles.</p>
+                </div>
+                <form id="reviewForm">
+                    <label for="comments">Comentarios:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Agregar comentarios o solicitar información adicional..."></textarea>
+                    <div class="buttons">
+                        <button type="button" onclick="approveDocument()">Aprobar</button>
+                        <button type="button" onclick="rejectDocument()">Rechazar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="./js/revision.js"></script>
+</body>
+</html>

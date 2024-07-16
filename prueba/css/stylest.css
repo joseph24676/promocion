@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+body {
+    background-image: url(6965061.jpg);
+    background-size: cover;
+
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    background-color: #333333bc;
+    font-size: 15px;
+    margin-top: 20px; /* Reducir el margen superior */
+    padding-top: 10px; /* Agregar un poco de espacio entre el borde superior y los elementos del menú */
+  }
+  
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+  }
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: #fd7146;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 250px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgba(228, 26, 26, 0.883);
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+
+}
+/* Agrega estilos para el título y el párrafo */
+/* Agrega estilos para el título y el párrafo */
+.welcome-section {
+    text-align: center;
+    margin-top: 50px; /* ajusta según sea necesario */
+}
+
+.welcome-section h1 {
+    font-size: 60px;
+    color: #000000; /* color del texto */
+}
+
+.welcome-section p {
+    font-size: 30px;
+    color: #020848; /* color del texto */
+    margin-top: 30px; /* ajusta según sea necesario */
+}
+
+/* Estilos para la imagen */
+.welcome-section img {
+    display: block;
+    margin: 20px auto; /* centra la imagen */
+    max-width: 52%; /* asegura que la imagen no exceda el ancho del contenedor */
+}
+
+/* Estilos para el cuadro de información */
+.info-box {
+    background-color: #f9f9f9; /* color de fondo */
+    border: 5px solid #ccc; /* borde */
+    padding: 20px; /* espacio interno */
+    margin-top: 50px; /* margen superior */
+}
+
+.info-box h2 {
+    font-size: 24px;
+    color: #333; /* color del título */
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #666; /* color del texto */
+}
+
+.info-box .read-more {
+    display: block;
+    text-align: center;
+    margin-top: 20px; /* margen superior para el enlace */
+    text-decoration: none;
+    color: #007bff; /* color del enlace */
+}
+
+.info-box .read-more:hover {
+    text-decoration: underline; /* subraya el enlace al pasar el cursor */
+}

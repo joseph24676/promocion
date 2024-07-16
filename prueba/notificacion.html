@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Comunicación/Notificaciones</title>
+    <link rel="stylesheet" href="./css/notificacion.css">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="notifications-section">
+            <h2>Notificaciones</h2>
+            <ul class="notifications-list">
+                <li><i class="fas fa-info-circle"></i> Su solicitud ha sido aprobada.</li>
+                <li><i class="fas fa-info-circle"></i> Se necesita información adicional para su solicitud.</li>
+                <!-- Agrega más notificaciones según sea necesario -->
+            </ul>
+        </div>
+
+        <div class="messages-section">
+            <h2>Mensajes</h2>
+            <div class="messages-list" id="messagesList">
+                <!-- Los mensajes se generan dinámicamente -->
+            </div>
+            <form id="messageForm">
+                <textarea id="messageInput" placeholder="Escribe un mensaje..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/notificacion.js"></script>
+</body>
+</html>

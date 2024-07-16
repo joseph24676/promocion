@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Solicitud de Promoción/Recategorización</title>
+    <link rel="stylesheet" href="./css/solicitud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de Promoción o Recategorización</h1>
+        <p>Aquí, podrás crear una solicitud de promoción o recategorización, asegúrate de adjuntar correctamente tus documentos requeridos y proporcionar información adicional relevante para el proceso.</p>
+        <form id="solicitudForm">
+            <div class="form-group">
+                <label for="nombre">Nombres:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <button type="button" id="cargarDocumentosBtn" class="cargarDocumentosBtn">Cargar Documentos</button>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje adicional:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+            <button type="submit" id="enviarSolicitudBtn">Enviar Solicitud</button>
+        </form>
+    </div>
+
+    <div id="mensajeExito" class="mensajeExito hidden">Solicitud enviada con éxito</div>
+
+    <script src="./js/solicitud.js"></script>
+</body>
+</html>
