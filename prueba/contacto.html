@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Soporte Técnico</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas asistencia técnica con la página web para solicitud y validación de documentos para promociones y recategorizaciones para docentes ULEAM, por favor contáctanos.</p>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="successMessage" class="success-message">Mensaje enviado con éxito</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío del formulario
+
+            // Mostrar el mensaje de éxito
+            var successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+
+            // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                successMessage.style.display = 'none';
+            }, 3000);
+
+            // Reiniciar el formulario
+            event.target.reset();
+        });
+    </script>
+</body>
+</html>

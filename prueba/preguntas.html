@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="./css/ayuda.css">
+</head>
+<body>
+    <header>
+        <h1>Preguntas Frecuentes</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>General</h2>
+            <div class="faq-item">
+                <h3>¿Qué es la página web para solicitud y validación de documentos para promociones y recategorizaciones?</h3>
+                <p>La página web es una plataforma digital diseñada para facilitar la solicitud y validación de documentos necesarios para las promociones y recategorizaciones de docentes en la Universidad Laica Eloy Alfaro de Manabí (ULEAM).</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Quién puede utilizar esta página web?</h3>
+                <p>La página web está destinada a los docentes de ULEAM que desean solicitar promociones o recategorizaciones dentro de la universidad.</p>
+            </div>
+
+            <h2>Acceso y Registro</h2>
+            <div class="faq-item">
+                <h3>¿Cómo puedo acceder a la página web?</h3>
+                <p>Puedes acceder a la página web a través del portal oficial de ULEAM, utilizando tus credenciales institucionales.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué hago si no puedo acceder a mi cuenta?</h3>
+                <p>Si tienes problemas para acceder a tu cuenta, puedes utilizar la opción "Recuperar contraseña" en la página de inicio de sesión o contactar al soporte técnico de ULEAM para asistencia.</p>
+            </div>
+
+            <h2>Uso de la Página Web</h2>
+            <div class="faq-item">
+                <h3>¿Cómo solicito una promoción o recategorización?</h3>
+                <p>Una vez que hayas iniciado sesión, ve al apartado de solicitudes y selecciona "Nueva solicitud". Completa el formulario con la información requerida y adjunta los documentos necesarios.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué documentos necesito para completar mi solicitud?</h3>
+                <p>Los documentos requeridos pueden incluir títulos académicos, certificados de cursos, publicaciones, cartas de recomendación, entre otros. La lista completa de documentos se especifica en la sección de requisitos de la página web.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Puedo guardar mi solicitud y completarla más tarde?</h3>
+                <p>Sí, la página web permite guardar solicitudes incompletas para que puedas completarlas en otro momento antes de enviarlas.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo puedo verificar el estado de mi solicitud?</h3>
+                <p>Puedes verificar el estado de tu solicitud en la sección "Mis solicitudes" dentro de la página web, donde se mostrará si está en revisión, aprobada o si requiere alguna acción adicional.</p>
+            </div>
+
+            <h2>Validación de Documentos</h2>
+            <div class="faq-item">
+                <h3>¿Quién valida los documentos que envío?</h3>
+                <p>Los documentos son validados por el comité de promociones y recategorizaciones de ULEAM, compuesto por miembros autorizados del personal administrativo y académico.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cuánto tiempo tarda la validación de documentos?</h3>
+                <p>El tiempo de validación puede variar dependiendo del volumen de solicitudes y la complejidad de los documentos presentados. Generalmente, el proceso puede tardar entre dos a cuatro semanas.</p>
+            </div>
+
+            <h2>Soporte Técnico</h2>
+            <div class="faq-item">
+                <h3>¿A quién contacto si tengo problemas con la página web?</h3>
+                <p>Si tienes algún problema técnico con la página web, puedes contactar al soporte técnico de ULEAM a través del correo electrónico soporte@uleam.edu.ec o llamando al número de atención al cliente proporcionado en el portal.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿La página web está disponible en dispositivos móviles?</h3>
+                <p>Sí, la página web es compatible con dispositivos móviles y puedes acceder a ella a través de cualquier navegador web en tu teléfono o tablet.</p>
+            </div>
+
+            <h2>Seguridad y Privacidad</h2>
+            <div class="faq-item">
+                <h3>¿Qué medidas de seguridad tiene la página web para proteger mis datos?</h3>
+                <p>La página web utiliza encriptación de datos y medidas de seguridad avanzadas para proteger la información personal y los documentos de los usuarios. Todos los datos se manejan conforme a las políticas de privacidad de ULEAM.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Mis datos personales serán compartidos con terceros?</h3>
+                <p>No, tus datos personales y documentos no serán compartidos con terceros sin tu consentimiento. La información se utiliza exclusivamente para el proceso de promociones y recategorizaciones dentro de ULEAM.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item h3');
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const parent = item.parentElement;
+                    parent.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
